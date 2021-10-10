@@ -31,6 +31,6 @@ function iLS = find_set_index_lift_size(Zc)
 
 
     if (iLS == -1)
-        error("Zc  is not found! ");
+        error("Zc is not valid! ");
     end
 end
