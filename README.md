@@ -1,5 +1,5 @@
 # 5G-NR-LDPC
-5G NR LDPC CPP implementation
+5G NR LDPC MATLAB implementation
 
 A good starting point is to run `example_run.m`
 
