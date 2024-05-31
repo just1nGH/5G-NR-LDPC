@@ -61,10 +61,10 @@ for i = 1: length(EsNodB)% loop each SNR(EsN0)
         llr = nrldpc_rate_recover(ldpc_info,llr);
         
         % decding 
-        %decBits = nrldpc_decoder(ldpc_info,llr,maxIter);
-        llr = llr(2*ldpc_info.Zc+1:end);
-        msg_cap = nrLDPCDecode(llr,ldpc_info.BGn,maxIter);%,'Algorithm','Offset min-sum');
-        decBits = msg_cap(1:K);
+        decBits = nrldpc_decoder(ldpc_info,llr,maxIter);
+        %llr = llr(2*ldpc_info.Zc+1:end);
+        %msg_cap = nrLDPCDecode(llr,ldpc_info.BGn,maxIter);%,'Algorithm','Offset min-sum');
+        %decBits = msg_cap(1:K);
         %Counting errors
         Nerrs = sum(msg ~= decBits);
 
